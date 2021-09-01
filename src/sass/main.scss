@@ -1,0 +1,27 @@
+@import "./homepage.scss";
+
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("../assets/font/Inter-Regular.ttf");
+  }
+
+body{
+    margin: 0px;
+    background: #faf9f7;
+    font-family: Inter-Regular !important ;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #d7d7d7;
+}

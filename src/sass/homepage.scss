@@ -1,0 +1,123 @@
+.homepage {
+  width: 75%;
+  margin: auto;
+  padding: 1rem;
+  height: calc(100vh - 2.2rem);
+
+  .page-container {
+    margin: 0px !important;
+    height: 100%;
+  }
+  .list-container {
+    padding: 10px;
+    background: white !important;
+    box-shadow: 0px 0px 10px #e9e6e6;
+    margin-right: 1rem;
+    .item {
+      .item-name {
+        display: inline-block;
+        font-size: 1rem;
+        width: 40%;
+      }
+      .basket-name {
+        font-size: 1.2rem;
+      }
+      .add-button {
+        background: lightskyblue;
+        margin-left: 10px;
+        text-transform: none;
+        font-weight: 800;
+        min-width: max-content;
+        padding: 6px;
+        color: white;
+      }
+      .add-button:disabled {
+        background: #999696;
+      }
+
+      .item-description {
+        width: 59%;
+        display: inline-block;
+        text-align: right;
+      }
+    }
+
+    .basket-item-container{
+      max-height: calc(100vh - 140px);
+      overflow: auto;
+      padding-right: 10px;
+      .item-total {
+        text-align: right;
+        margin-top: 8px;
+        color: black !important;
+        margin-bottom: 1.5rem;
+        .currency {
+          color: black !important;
+        }
+      }
+
+      .item-subtotal{
+        text-align: right;
+        margin-top: 8px;
+        color: #616161 !important;
+        .currency {
+          color: #616161 !important;
+        }
+      }
+
+      .item-saving{
+        text-align: right;
+        margin-top: 8px;
+        color: red !important;
+        .currency {
+          color: red !important;
+        }
+      }
+  
+      .basket-button-plus {
+        background: lightskyblue;
+        margin-right: 15px;
+        text-transform: none;
+        font-weight: 800;
+        min-width: max-content;
+        padding: 6px;
+        color: white;
+      }
+  
+      .basket-button-minus {
+        background: white;
+        margin-left: 15px;
+        text-transform: none;
+        font-weight: 800;
+        min-width: max-content;
+        padding: 6px;
+        color: black;
+        border: 2px solid skyblue;
+      }
+    }
+    .basket-parameter{
+      margin-top: 20px;
+    }
+  }
+
+  .currency {
+    color: #616161;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #d6d5d5;
+    margin: 0.5rem 0px;
+  }
+}
+
+
+@media(max-width: 565px){
+  .homepage{
+    width: calc(100% - 2rem);
+
+    .list-container{
+      margin-right: 0px !important;
+      margin-bottom: 1rem;
+    }
+  }
+}
